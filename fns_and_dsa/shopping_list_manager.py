@@ -11,8 +11,8 @@ def remove_item(shopping_list: list, item: str):
 def view_list(shopping_list):
     if shopping_list:
         print("Shopping List:")
-        for index, item in enumerate(shopping_list, start=1):
-            print(f"{index}. {item}")
+        for item in shopping_list:
+            print(item)
     else:
         print("Your shopping list is empty.")
 
@@ -30,10 +30,10 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item = input("Enter the item name: ")
+            item = input("Enter the item to add: ")  # Updated prompt
             add_item(shopping_list, item)
         elif choice == '2':
-            item = input("Enter the item name: ")
+            item = input("Enter the item to remove: ")  # Updated prompt
             remove_item(shopping_list, item)
         elif choice == '3':
             view_list(shopping_list)
