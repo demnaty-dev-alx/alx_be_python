@@ -30,10 +30,10 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item = input("Enter the item to add: ")  # Updated prompt
+            item = input("Enter the item to add: ")
             add_item(shopping_list, item)
         elif choice == '2':
-            item = input("Enter the item to remove: ")  # Updated prompt
+            item = input("Enter the item to remove: ")
             remove_item(shopping_list, item)
         elif choice == '3':
             view_list(shopping_list)
